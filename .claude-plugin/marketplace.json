@@ -1,0 +1,17 @@
+{
+  "name": "product-design-pipeline",
+  "owner": { "name": "sonkarsharad94" },
+  "metadata": {
+    "description": "An MVP-first, accessibility-first product design pipeline for Claude.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "product-design-pipeline",
+      "source": "./plugins/product-design-pipeline",
+      "description": "Take a product from stakeholder notes to a validated MVP handoff and beyond, with 13 specialist roles and human approval checkpoints.",
+      "version": "1.0.0",
+      "category": "design"
+    }
+  ]
+}
