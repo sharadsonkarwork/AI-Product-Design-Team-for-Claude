@@ -1,8 +1,8 @@
 {
   "name": "product-design-pipeline",
-  "version": "1.0.0",
-  "description": "An MVP-first product design workflow: research, strategy, MVP scoping (MoSCoW + value vs effort), architecture, UX, design system, content, prototype, critique, validation, handoff, measurement and build QA, with human approval checkpoints and WCAG 2.2 AA built in.",
+  "version": "1.2.0",
+  "description": "An MVP-first product design workflow: research, strategy, MVP scoping (MoSCoW + value vs effort), architecture, UX, design system, content, prototype, critique, validation, handoff, measurement, build QA and a portfolio case study with UX-law annotations, with human approval checkpoints and WCAG 2.2 AA built in.",
   "author": { "name": "sonkarsharad94" },
   "license": "MIT",
-  "keywords": ["ux", "product-design", "mvp", "design-system", "accessibility", "wcag", "handoff", "prototype"]
+  "keywords": ["ux", "product-design", "mvp", "design-system", "accessibility", "wcag", "handoff", "prototype", "case-study", "laws-of-ux"]
 }

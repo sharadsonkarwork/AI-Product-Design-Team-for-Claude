@@ -27,8 +27,9 @@ Everything in `design-workspace/01` to `09`, with the high-fidelity prototype in
 2. **Traceability**: every in-scope requirement is served by at least one screen; every screen serves a persona goal; every `[COPY: …]` slot is filled.
 3. **WCAG 2.2 AA**: mark each Pass, Fail, or Verify in build. Always cover 1.1.1, 1.3.1, 1.3.2, 1.3.3, 1.3.4, 1.3.5, 1.4.1, 1.4.3, 1.4.4, 1.4.10, 1.4.11, 1.4.12, 1.4.13, 2.1.1, 2.1.2, 2.2.1, 2.3.1, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.6, 2.4.7, 2.4.11, 2.5.3, 2.5.7, 2.5.8, 3.1.1, 3.2.1, 3.2.2, 3.2.3, 3.2.4, 3.2.6, 3.3.1, 3.3.2, 3.3.3, 3.3.4, 3.3.7, 3.3.8, 4.1.2, 4.1.3. **Compute contrast ratios yourself** from the token values; don't trust stated numbers.
 4. **Heuristics**: score Nielsen's 10 heuristics 0–4 (0 = no problem, 4 = usability catastrophe) with evidence.
-5. **Critique follow-up**: confirm High issues from `09-critique/critique-report.md` were resolved.
-6. **Consistency** of tokens, components, terminology, and tone.
+5. **UX laws log check**: check at least 10 entries in `05-ux/ux-laws-log.md` (all of them if there are fewer) against the design. Flag any claimed law that isn't visible in the design, or that conflicts with accessibility (for example emphasis by color alone).
+6. **Critique follow-up**: confirm High issues from `09-critique/critique-report.md` were resolved.
+7. **Consistency** of tokens, components, terminology, and tone.
 
 ### Output: `design-workspace/10-validation/mvp-validation.md`
 
@@ -49,3 +50,9 @@ Everything in `design-workspace/01` to `09`, with the high-fidelity prototype in
 
 ## Return
 Follow the return summary in the working rules. Add: the verdict, counts by severity, and every Critical and High issue with its owner.
+
+## Lite mode
+There's no separate critic in Lite mode, so also check visual hierarchy, consistency with the design system, and interaction feedback, using the critic's categories. Report these issues in the same table.
+
+## Reading and length limits
+Start from the upstream `summary.md` files. Open full files only for the screens and personas you're checking. Report issues only, not passes, except in the verdict tables.

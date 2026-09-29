@@ -49,6 +49,10 @@ A = {
  "build-qa-analyst": ("roles","red",
   "Use this agent after developers build the MVP to check the real build against the approved design: design fidelity, token use, copy accuracy, WCAG 2.2 AA on the live product, analytics events and performance budgets, ending with a release recommendation.",
   [("Staging build is available", "QA the build against the designs before we launch", "I'll use the build-qa-analyst agent to check design fidelity and accessibility on the build.")]),
+ "case-study-designer": ("roles","magenta",
+  "Use this agent to create a visual, portfolio-ready case study of a design project from the design workspace: problem statement, research, personas, jobs to be done, journey map, flows, MVP decisions, wireframe-to-design evolution, design system, accessibility, validation and outcomes, with UX-law badges linked to lawsofux.com. It can also produce an anonymised version for NDA work.",
+  [("MVP design is approved for development", "Create a case study of this project for my portfolio", "I'll use the case-study-designer agent to build the case study from the workspace."),
+   ("Project is under NDA", "Make an anonymised version of the case study", "I'll use the case-study-designer agent to create an anonymised version and keep a private replacement log.")]),
  "localization-reviewer": ("addons","cyan",
   "Optional add-on. Use this agent when a product ships in multiple languages or regions, to check text expansion, right-to-left layouts, locale formats, translatable copy, language markup and cultural fit.",
   [("Product will launch in Germany and the UAE", "Check the design is ready for German and Arabic", "I'll use the localization-reviewer agent to check expansion, RTL and locale formats.")]),
@@ -60,12 +64,18 @@ A = {
   [("Handoff is approved", "Break this into Jira tickets for the team", "I'll use the engineering-breakdown-planner agent to create epics and stories.")]),
 }
 
+LIGHT = {"documentation-engineer","measurement-planner","localization-reviewer","engineering-breakdown-planner"}
+LAWS = {"ux-designer","design-system-designer","content-writer","design-critic","validator","case-study-designer"}
+laws = (REF/"ux-laws.md").read_text().strip()
 out = P/"agents"
+for old in out.glob("*.md"): old.unlink()
 for name,(folder,color,desc,exs) in A.items():
     body = (REF/folder/f"{name}.md").read_text().strip()
     ex = "\n\n".join(
       f"<example>\nContext: {c}\nuser: \"{u}\"\nassistant: \"{a}\"\n</example>" for c,u,a in exs)
-    fm = f"---\nname: {name}\ndescription: >-\n  {desc}\n\n" + "\n".join("  "+l if l else "" for l in ex.splitlines()) + f"\nmodel: inherit\ncolor: {color}\n---\n\n"
+    fm = f"---\nname: {name}\ndescription: >-\n  {desc}\n\n" + "\n".join("  "+l if l else "" for l in ex.splitlines()) + f"\nmodel: {'sonnet' if name in LIGHT else 'inherit'}\ncolor: {color}\n---\n\n"
     tail = "\n\n---\n\n" + rules.strip().replace("# Working rules for every role", "# Working rules") + "\n"
+    if name in LAWS:
+        tail += "\n---\n\n" + laws + "\n"
     (out/f"{name}.md").write_text(fm + body + tail)
 print(len(list(out.glob('*.md'))), "agents")

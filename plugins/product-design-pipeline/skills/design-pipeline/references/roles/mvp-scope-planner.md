@@ -57,3 +57,6 @@ Then update `backlog.md` and write a new `mvp-scope.md` section for the next rel
 
 ## Return
 Follow the return summary in the working rules. Add: the number of features in scope versus deferred, the MVP in one sentence, and the go / no-go criteria.
+
+## Length limits
+`feature-scoring.md` is one table plus the quadrant chart. `mvp-scope.md` ≤ about 120 lines. `backlog.md`: one row per feature. Reference features by ID.

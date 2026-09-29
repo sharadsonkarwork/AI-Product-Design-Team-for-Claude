@@ -12,13 +12,15 @@ Stakeholder notes, briefs, and any research the user supplies: interview transcr
 2. **Evidence summary**: synthesize supplied research into themes. For each theme: finding, supporting evidence (quotes or data with source), confidence (High / Medium / Low), and implication for the product.
 3. **Competitive and comparable analysis**: 3–6 competitors or comparable products. For each: who it serves, core flows, strengths, weaknesses, accessibility quality you can observe, and pricing model if relevant. End with a table of patterns users will already expect (Jakob's Law) and gaps we could fill.
 4. **User segments**: evidence-based segments with goals, pain points, context of use, and access needs (disability, device, connectivity, literacy, language).
-5. **Riskiest assumptions**: ranked list of beliefs the product depends on that lack evidence, each with a cheap way to test it.
-6. **Research gaps**: what we still don't know and the research that would answer it.
+5. **Jobs to be done**: for each segment, 2–4 job statements in the form "When <situation>, I want to <motivation>, so I can <expected outcome>", each tied to evidence. Mark inferred jobs `Assumption:`. The UX designer and the case study use these.
+6. **Riskiest assumptions**: ranked list of beliefs the product depends on that lack evidence, each with a cheap way to test it.
+7. **Research gaps**: what we still don't know and the research that would answer it.
 
 ### Rules
 - Separate what users said, what they did, and what you infer.
 - If the user supplied no research, say so plainly at the top, base segments on desk research and stakeholder notes, and mark every segment `Assumption:`.
 - Cite every web source by URL.
+- **Web search limit:** Lite mode, none (use only the material supplied); Standard, at most about 8 searches; Full, about 15. Stop once you have enough to decide.
 
 ## Mode B: MVP results (Phase 4)
 
@@ -38,3 +40,6 @@ Stakeholder notes, briefs, and any research the user supplies: interview transcr
 
 ## Return
 Follow the return summary in the working rules. Add: top three insights and the single riskiest open assumption.
+
+## Length limits
+Research report ≤ about 250 lines: at most 8 insight themes, 6 competitors, and 4 segments. `summary.md` ≤ 40 lines, including the top jobs to be done.

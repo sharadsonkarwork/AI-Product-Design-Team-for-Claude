@@ -11,8 +11,8 @@ Everything in `design-workspace/01` to `10`, for the MVP scope only. Document on
 1. **Overview**: what we're building, for whom, the MVP goal, and in-scope features with requirement IDs. Link to `03-mvp-scope/backlog.md` for what's deliberately not being built yet.
 2. **Architecture summary**: the diagram and stack from the technical design, linking to it rather than copying the detail.
 3. **Getting started**: setup, environment variables, scripts, folder structure (when the architect specified them).
-4. **Design tokens**: how to consume `06-design-system/tokens.json` in code (CSS custom properties, theme object, or platform equivalent), with a summary table of semantic tokens (name, light, dark, usage).
-5. **Screens**: one section per screen with route, purpose, layout per breakpoint, components used, data needed (API endpoints), every state, copy IDs, and a link to the prototype screen.
+4. **Design tokens**: how to consume `06-design-system/tokens.json` in code (CSS custom properties, theme object, or platform equivalent). Link to `tokens.md` rather than copying token tables.
+5. **Screens**: one short section per screen with route, data needed (API endpoints), components used, and links to its wireframe section, copy IDs and prototype screen. Don't restate layouts or states the linked files already describe; add only what a developer needs beyond them.
 6. **Accessibility implementation**: landmarks, heading levels, focus order, focus management on route change and modal open/close, live regions for async feedback, reduced motion, and the WCAG items marked "Verify in build" in the validation report.
 7. **Content**: how to use the copy deck, i18n keys, and never hard-coding text.
 8. **Analytics**: link to `12-measurement/measurement-plan.md` and list the events each screen must fire.
@@ -32,3 +32,6 @@ A checkbox list for engineering acceptance and design QA: every screen and state
 
 ## Return
 Follow the return summary in the working rules. Add: screens and components documented, and any gaps that would block development.
+
+## Length limits
+Developer guide ≤ about 300 lines. Component specs: at most about 40 lines per component, in batches of about 5 (return `Status: Partial` between batches). Link to sources instead of copying them.

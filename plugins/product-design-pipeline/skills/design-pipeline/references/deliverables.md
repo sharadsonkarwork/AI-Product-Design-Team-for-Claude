@@ -1,7 +1,7 @@
 # Deliverables
 
 ## Working files: the source of truth
-Every role writes Markdown (plus `tokens.json` and prototype files) in `design-workspace/`. These are what the next stage reads, in every environment.
+Every role writes Markdown (plus `tokens.json` and prototype files) in `design-workspace/`. These are what the next stage reads, in every environment. Every numbered folder also has a `summary.md` (≤ about 40 lines), which other roles and the orchestrator read first.
 
 ```
 design-workspace/
@@ -10,7 +10,7 @@ design-workspace/
 ├── 02-strategy/        requirements.md
 ├── 03-mvp-scope/       feature-scoring.md, mvp-scope.md, backlog.md
 ├── 04-architecture/    effort-estimates.md, technical-design.md
-├── 05-ux/              personas.md, journeys.md, wireframes.md
+├── 05-ux/              personas.md, journeys.md, wireframes.md (index), screens/<flow-id>.md, ux-laws-log.md (shared)
 ├── 06-design-system/   tokens.md, tokens.json, components.md
 ├── 07-content/         content-guide.md, copy-deck.md, content-audit.md
 ├── 08-prototype/       prototype.md, concept/, mvp/
@@ -20,6 +20,7 @@ design-workspace/
 ├── 12-measurement/     measurement-plan.md
 ├── 13-build-qa/        build-qa-report.md
 ├── 14-mvp-results/     usability-test-plan.md, results-synthesis.md, go-no-go.md
+├── 15-case-study/      case-study.md, case-study.html, case-study-anonymised.html, anonymisation-log.md (private)
 ├── addons/             localization.md, privacy-compliance.md, engineering-breakdown.md
 └── _archive/           <release>/ …
 ```
@@ -29,14 +30,14 @@ Stakeholders shouldn't have to read Markdown files. Check what this environment 
 
 1. **Document and slide artifact types** (for example Docs and Slides types in the Claude app). Publish the checkpoint pack as a short slide deck, and key documents (requirements, MVP scope, developer guide) as documents.
 2. **A connected document tool** (for example Google Drive, Notion, Confluence), when the user asks for it there.
-3. **Figma**, when connected: the prototype and design system (see the prototyper and design-system-designer briefs). FigJam for journey maps and flows if the user wants them.
+3. **Figma**, when connected: the prototype, design system and case study frames (see those briefs). FigJam for journey maps and flows if the user wants them.
 4. **A published web page or a single HTML file**: one self-contained, accessible summary page per checkpoint. The HTML prototype can be published or shared the same way.
 5. **Markdown files only**: attach them or point to the folder. In a code editor or terminal environment, this is often what the user prefers; ask once at intake.
 
 Whatever the format, the human-facing version must match the working files. Regenerate it from them; never edit it separately.
 
 ## Checkpoint packs
-Save each pack's source in `design-workspace/00-orchestration/checkpoints/checkpoint-<n>.md`, then deliver it in the richest available format. Keep it short: approvers should be able to decide in about ten minutes.
+Build each pack from the stage `summary.md` files, not from the full documents. Save each pack's source in `design-workspace/00-orchestration/checkpoints/checkpoint-<n>.md`, then deliver it in the richest available format. Keep it short: approvers should be able to decide in about ten minutes.
 
 **Checkpoint 1: MVP scope**
 - The problem and the primary user, in two sentences.
@@ -61,6 +62,7 @@ Save each pack's source in `design-workspace/00-orchestration/checkpoints/checkp
 - The handoff contents.
 - The measurement plan summary.
 - Decisions needed.
+- The offer of a portfolio case study, including whether an anonymised version is needed.
 
 **Checkpoint 4: Release decision**
 - Build QA result.

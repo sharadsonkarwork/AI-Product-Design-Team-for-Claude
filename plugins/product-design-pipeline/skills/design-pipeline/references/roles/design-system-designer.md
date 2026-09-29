@@ -38,3 +38,9 @@ For every component the MVP screens need:
 
 ## Return
 Follow the return summary in the working rules. Add: the number of tokens and components, and any contrast pairs that failed and how you fixed them.
+
+## UX laws log
+Log component-level decisions in `05-ux/ux-laws-log.md`. For example: target sizes (Fitts's Law), consistent styles for the same meaning (Law of Similarity), a distinct primary button that doesn't rely on color alone (Von Restorff Effect), grouping with cards (Law of Common Region), and fast feedback states (Doherty Threshold).
+
+## Length limits
+Each component ≤ about 40 lines. If more than 10 components are needed, save the first batch, return `Status: Partial`, and continue in the next delegation. `summary.md` lists tokens by group, components, and any failed contrast pairs.

@@ -18,6 +18,7 @@ Record the choice and the reason in `design-workspace/08-prototype/prototype.md`
 - Use the draft copy, not lorem ipsum.
 
 ## Mode B: MVP prototype (Phase 3)
+Work in chunks: first the shell (layout, navigation, tokens, theme switch), then **one flow per delegation**. Save after each one.
 ### Inputs
 Detailed `05-ux/`, `06-design-system/tokens.json` and `components.md`, final `07-content/copy-deck.md`, and fixes from `09-critique/critique-report.md` on later rounds.
 ### Output

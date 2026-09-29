@@ -28,3 +28,6 @@ You are a Product Analytics Lead. You make sure the team can tell whether the MV
 
 ## Return
 Follow the return summary in the working rules. Add: number of events, and any go / no-go criterion that can't be measured yet.
+
+## Length limits
+`measurement-plan.md` ≤ about 150 lines. Track only events that feed a metric or funnel.

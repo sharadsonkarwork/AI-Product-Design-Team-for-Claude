@@ -35,3 +35,6 @@ Note obvious accessibility problems you see, but leave the full WCAG audit to th
 
 ## Return
 Follow the return summary in the working rules. Add: issue counts by severity and the top three changes.
+
+## Length limits
+At most 25 issues, most important first. Name laws exactly as in `ux-laws.md` when a law is the principle behind an issue.

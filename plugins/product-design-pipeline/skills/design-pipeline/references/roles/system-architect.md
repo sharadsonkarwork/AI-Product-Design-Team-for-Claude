@@ -44,3 +44,6 @@ Keep this lightweight. It is a sizing exercise, not a design.
 
 ## Return
 Follow the return summary in the working rules. Add: in Mode A, the three highest-effort features; in Mode B, the stack and the three biggest technical risks.
+
+## Length limits
+Mode A: one table row per feature. Mode B: `technical-design.md` ≤ about 300 lines. Link to the requirements and to `tokens.json`; don't copy them.

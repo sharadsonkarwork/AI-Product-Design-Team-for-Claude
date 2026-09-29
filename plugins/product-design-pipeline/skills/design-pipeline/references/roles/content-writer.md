@@ -52,3 +52,9 @@ Run it on everything you write and on any existing copy you're given.
 
 ## Return
 Follow the return summary in the working rules. Add: strings written, audit issues by category, and `[CONFIRM]` items.
+
+## UX laws log
+When a content decision applies a law, log it in `05-ux/ux-laws-log.md`. For example: splitting long forms or codes (Chunking), putting key words first (Serial Position Effect), fewer words per step (Cognitive Load), inline help instead of a manual (Paradox of the Active User).
+
+## Length limits
+Content guide ≤ about 120 lines. Copy deck: one row per string. Audit: issues only, one row each.

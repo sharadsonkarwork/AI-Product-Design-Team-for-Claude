@@ -27,6 +27,7 @@ If the user asks for one job only, run just that role and its gate:
 - "Prototype these wireframes" → prototyper
 - "QA the build" → build-qa-analyst
 - "Plan how we measure this" → measurement-planner
+- "Create a case study of this project" → case-study-designer. It works on a partial workspace too; sections without source material are left out, not invented.
 
 For a slice, backfill only the inputs that role needs, and tell the user which stages were skipped and what was assumed.
 
