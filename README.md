@@ -8,6 +8,53 @@ Product Design Pipeline is a Claude plugin that runs a complete product design w
 
 It covers research, requirements, MVP scoping, concept testing, design system, content, prototyping, critique, validation, developer handoff, measurement, build QA and a portfolio case study. It stops for your approval at every major decision, and builds WCAG 2.2 AA accessibility into every step.
 
+┌───────────────────────────────────────────────┐
+│        PRODUCT DESIGN PIPELINE                │
+│                                               │
+│ Research → Strategy → MVP → UX → UI           │
+│     ↓                              ↓           │
+│ Prototype → Validate → Handoff → QA           │
+│                                               │
+│       14 specialist AI agents                 │
+└───────────────────────────────────────────────┘
+
+
+## What is Product Design Pipeline?
+
+Product Design Pipeline is an AI product design workflow for Claude and Claude Code.
+
+It turns product requirements, stakeholder notes, Figma files, wireframes, or MVP results into a structured product design process using specialist AI agents for:
+
+- UX research
+- Product strategy
+- MVP scoping
+- UX design
+- UI design
+- UX writing
+- Prototyping
+- Design systems
+- Accessibility
+- Design critique
+- Usability validation
+- Developer handoff
+- Product analytics
+- Build QA
+
+## Who is this for?
+
+Product Design Pipeline is designed for:
+
+- UX designers using Claude
+- Product designers
+- UX/UI designers
+- Product managers
+- Design leads
+- UX researchers
+- Indie hackers
+- Startup founders
+- Developers building products with Claude Code
+- Teams building AI-assisted product design workflows
+
 ## Why use it
 - **MVP-first:** scopes the smallest valuable release with MoSCoW and value vs effort, and tests a cheap concept before any detailed design.
 - **You stay in control:** four approval checkpoints, and Claude never approves its own work.
@@ -39,6 +86,30 @@ PHASE 4  CHECK & PLAN    Build QA → Real-user results → Go / Iterate / Pivot
 
 For other methods (local folder, manual install), updating and uninstalling, see the [User Guide](plugins/product-design-pipeline/docs/USER-GUIDE.md#installation).
 
+## Use cases
+
+### AI UX Research
+Turn stakeholder notes, product requirements and existing research into structured research plans, personas, JTBD and insights.
+
+### AI Product Design
+Run a complete product design workflow from discovery through validation and handoff.
+
+### AI UX/UI Design
+Generate UX flows, interaction concepts, UI requirements and design-system specifications.
+
+### AI MVP Planning
+Use MoSCoW prioritization and value-vs-effort analysis to define the smallest valuable product.
+
+### AI Design System
+Create reusable design tokens, component specifications and implementation guidance.
+
+### AI Accessibility Review
+Evaluate designs against WCAG 2.2 AA, including keyboard navigation, contrast, ARIA and inclusive personas.
+
+### AI Developer Handoff
+Produce implementation-ready UX specifications, design tokens, analytics requirements and QA checklists.
+
+
 ## Quick start
 ```
 Run the design pipeline on these stakeholder notes:
@@ -67,6 +138,30 @@ Other ways to start:
 | Case study designer | *Add-on:* Engineering breakdown planner | |
 
 The **orchestrator skill** (`design-pipeline`) leads them all.
+
+
+## FAQ
+
+### What is the Product Design Pipeline Claude plugin?
+
+Product Design Pipeline is a Claude plugin that orchestrates specialist AI agents across the product design lifecycle, from research and MVP definition through UX/UI design, validation and developer handoff.
+
+### Can Claude Code be used for product design?
+
+Yes. Product Design Pipeline provides a structured product design workflow that can be run through Claude Code using specialist agents and an orchestration skill.
+
+### Is this a UX design agent for Claude?
+
+It is a multi-agent UX and product design workflow rather than a single UX agent. It coordinates research, product strategy, UX design, prototyping, validation, accessibility, design systems and handoff.
+
+### Can it generate a product design case study?
+
+Yes. The pipeline includes a case-study stage that documents research, personas, jobs-to-be-done, journeys, flows and product decisions.
+
+### Does the pipeline support accessibility?
+
+Yes. Accessibility is integrated throughout the workflow with WCAG 2.2 AA requirements, contrast checks, keyboard interaction and ARIA specifications.
+
 
 ## Repository layout
 ```
