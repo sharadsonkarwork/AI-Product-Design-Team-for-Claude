@@ -1,23 +1,22 @@
-# Product Design Pipeline for Claude
+# Product Design Pipeline (AI Product Design Team for Claude)
 
-**An MVP-first, accessibility-first product design team for Claude, from stakeholder notes to a validated developer handoff.**
+**An AI product design team for Claude - MVP-first, accessibility-first, and human-approved.**
+14 specialist agents take a product from research and strategy to UX/UI design, validation, developer handoff and build QA.
 
 ![Version](https://img.shields.io/badge/version-1.2.0-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green) ![WCAG 2.2 AA](https://img.shields.io/badge/WCAG-2.2%20AA-purple)
 
-Product Design Pipeline is a Claude plugin that runs a complete product design workflow with 14 specialist agents.
+Product Design Pipeline is an AI product design plugin for Claude that runs a complete product design workflow with 14 specialist agents.
 
-It covers research, requirements, MVP scoping, concept testing, design system, content, prototyping, critique, validation, developer handoff, measurement, build QA and a portfolio case study. It stops for your approval at every major decision, and builds WCAG 2.2 AA accessibility into every step.
-
+It covers UX research, product strategy, MVP scoping, UX/UI design, design systems, content, prototyping, critique, validation, accessibility, developer handoff, measurement and build QA.
 ┌───────────────────────────────────────────────┐
 │        PRODUCT DESIGN PIPELINE                │
 │                                               │
 │ Research → Strategy → MVP → UX → UI           │
-│     ↓                              ↓           │
+│     ↓                              ↓          │
 │ Prototype → Validate → Handoff → QA           │
 │                                               │
 │       14 specialist AI agents                 │
 └───────────────────────────────────────────────┘
-
 
 ## What is Product Design Pipeline?
 
@@ -25,20 +24,37 @@ Product Design Pipeline is an AI product design workflow for Claude and Claude C
 
 It turns product requirements, stakeholder notes, Figma files, wireframes, or MVP results into a structured product design process using specialist AI agents for:
 
-- UX research
-- Product strategy
-- MVP scoping
-- UX design
-- UI design
-- UX writing
-- Prototyping
-- Design systems
-- Accessibility
-- Design critique
-- Usability validation
-- Developer handoff
-- Product analytics
-- Build QA
+Most AI coding workflows begin with:
+
+Idea → Prompt → Code
+
+Product Design Pipeline adds the missing product-design layer:
+
+Research
+   ↓
+Strategy
+   ↓
+MVP
+   ↓
+UX
+   ↓
+Concept
+   ↓
+Prototype
+   ↓
+Validate
+   ↓
+Design system
+   ↓
+Developer handoff
+   ↓
+Build QA
+   ↓
+Measure
+   ↓
+Iterate
+
+Instead of asking Claude to “design an app,” Product Design Pipeline gives Claude a structured product-design team with specialist roles, quality gates and human approval checkpoints.
 
 ## Who is this for?
 
@@ -139,7 +155,6 @@ Other ways to start:
 
 The **orchestrator skill** (`design-pipeline`) leads them all.
 
-
 ## FAQ
 
 ### What is the Product Design Pipeline Claude plugin?
@@ -161,7 +176,6 @@ Yes. The pipeline includes a case-study stage that documents research, personas,
 ### Does the pipeline support accessibility?
 
 Yes. Accessibility is integrated throughout the workflow with WCAG 2.2 AA requirements, contrast checks, keyboard interaction and ARIA specifications.
-
 
 ## Repository layout
 ```
