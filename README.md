@@ -1,15 +1,15 @@
-# Product Design Pipeline (AI Product Design Team for Claude)
+# AI Product Design Team for Claude
 
 **An AI product design team for Claude - MVP-first, accessibility-first, and human-approved.**
 14 specialist agents take a product from research and strategy to UX/UI design, validation, developer handoff and build QA.
 
 ![Version](https://img.shields.io/badge/version-1.2.0-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green) ![WCAG 2.2 AA](https://img.shields.io/badge/WCAG-2.2%20AA-purple)
 
-Product Design Pipeline is an AI product design plugin for Claude that runs a complete product design workflow with 14 specialist agents.
+AI Product Design Team for Claude is an AI product design plugin for Claude that runs a complete product design workflow with 14 specialist agents.
 
 It covers UX research, product strategy, MVP scoping, UX/UI design, design systems, content, prototyping, critique, validation, accessibility, developer handoff, measurement and build QA.
 ┌───────────────────────────────────────────────┐
-│        PRODUCT DESIGN PIPELINE                │
+│        AI Product Design Team for Claude      │
 │                                               │
 │ Research → Strategy → MVP → UX → UI           │
 │     ↓                              ↓          │
@@ -18,9 +18,9 @@ It covers UX research, product strategy, MVP scoping, UX/UI design, design syste
 │       14 specialist AI agents                 │
 └───────────────────────────────────────────────┘
 
-## What is Product Design Pipeline?
+## What is AI Product Design Team for Claude?
 
-Product Design Pipeline is an AI product design workflow for Claude and Claude Code.
+AI Product Design Team for Claude is an AI product design workflow for Claude and Claude Code.
 
 It turns product requirements, stakeholder notes, Figma files, wireframes, or MVP results into a structured product design process using specialist AI agents for:
 
@@ -28,7 +28,7 @@ Most AI coding workflows begin with:
 
 Idea → Prompt → Code
 
-Product Design Pipeline adds the missing product-design layer:
+AI Product Design Team for Claude adds the missing product-design layer:
 
 Research
    ↓
@@ -54,11 +54,11 @@ Measure
    ↓
 Iterate
 
-Instead of asking Claude to “design an app,” Product Design Pipeline gives Claude a structured product-design team with specialist roles, quality gates and human approval checkpoints.
+Instead of asking Claude to “design an app,” AI Product Design Team for Claude gives Claude a structured product-design team with specialist roles, quality gates and human approval checkpoints.
 
 ## Who is this for?
 
-Product Design Pipeline is designed for:
+AI Product Design Team for Claude is designed for:
 
 - UX designers using Claude
 - Product designers
@@ -157,13 +157,13 @@ The **orchestrator skill** (`design-pipeline`) leads them all.
 
 ## FAQ
 
-### What is the Product Design Pipeline Claude plugin?
+### What is the AI Product Design Team for Claude plugin?
 
-Product Design Pipeline is a Claude plugin that orchestrates specialist AI agents across the product design lifecycle, from research and MVP definition through UX/UI design, validation and developer handoff.
+AI Product Design Team for Claude is a plugin that orchestrates specialist AI agents across the product design lifecycle, from research and MVP definition through UX/UI design, validation and developer handoff.
 
 ### Can Claude Code be used for product design?
 
-Yes. Product Design Pipeline provides a structured product design workflow that can be run through Claude Code using specialist agents and an orchestration skill.
+Yes. AI Product Design Team for Claude provides a structured product design workflow that can be run through Claude Code using specialist agents and an orchestration skill.
 
 ### Is this a UX design agent for Claude?
 
